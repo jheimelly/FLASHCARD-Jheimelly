@@ -112,8 +112,12 @@ font-family: Bai Jamjuree;
      justify-content: space-between;
      padding: 4rem;
      gap: 3rem;
-}criaCartao(
-    categoria,
-    pergunta,
-    resposta
+}(.cartao__conteudo__pergunta
+    .cartao__conteudo__resposta
+    @media screen and (min-width: 1024px) {
+    }@media screen and (min-width: 1024px) {
+        .banner__titulo {
+          font-size: 36px;
+        }
+      }
 )
