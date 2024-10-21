@@ -9,16 +9,14 @@ style.css
     --card-front-color: #144480;
     --card-back-color: #00F4BF;
 }
-
 body{
     background: url(img/bg-desktop.webp);
     font-family:"Bai Jamjuree" ;
 }
-
 #container{
+    flex-wrap: wrap; /*jogar o 4 .cartao para a linlha de baixo/*
     display: flex; /*transforma em elemento flexível*/
 }
-
 .cartao{
     margin: 1rem 1rem; /*espaço externo 1rem p/ todos os lados*/
     height: 20rem; /*altura elemento 20rem*/
@@ -34,7 +32,6 @@ body{
     transition: transform 300ms ease-in-out;
     /*transição de 300milisegundos de fácil percepção*/
 }
-
 .cartao__conteudo h3{ /*estilo do titulo do cartao*/
     color: var(--text-color);/*COR DO TEXTO*/
     border: 1px solid var(--text-color);
@@ -53,7 +50,6 @@ body{
     padding: 2rem; /*ESPAÇO INTERNO DO ELEMENTO DE 2REM*/
     margin-top: 4rem; /*MARGEM EXTERNA SUPERIOR DE 1REM*/
 }
-
 .cartao__conteudo__pergunta p{
     color: var(--text-color);
     font-weight: 500; /*ESPESSURA DA LETRA, 500*/
@@ -67,7 +63,6 @@ body{
     transform: rotateY(180deg);
     /* Transformando a rotação no eixoY em 180graus*/
 }
-
 .cartao__conteudo__pergunta,
 .cartao__conteudo__resposta{
     backface-visibility: hidden; /*ELEMENTOS FICAM OCULTOS*/
@@ -75,15 +70,9 @@ body{
     height: 100%;
     width: 100%;
 }
-
 .cartao__conteudo__resposta{
     transform: rotateY(180deg);
 }
-
-
-
-
-
 footer {
     background-color: black;
     color: white;
@@ -92,7 +81,6 @@ footer {
     width:100%;
     height: 2rem;
 }
-
 footer p{
     text-align: center;
     font-size: 0.6rem;
